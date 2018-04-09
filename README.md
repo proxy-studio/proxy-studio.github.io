@@ -1,37 +1,24 @@
-## Welcome to GitHub Pages
+# proxy-studio.github.io
+## Welcome your comments and suggestions/欢迎您的留言与建议
 
-You can use the [editor on GitHub](https://github.com/proxy-studio/proxy-studio.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Github项目托管Home：https://github.com/jeep711                                                                                             
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+码云项目托管Home：http://git.oschina.net/JEEP711                                                                                            
 
-### Markdown
+Github博客Home：https://jeep711.github.io                                                                                                  
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Github Blog：https://jeep711.github.io/Home/index.html                                                                                     
 
-```markdown
-Syntax highlighted code block
+Coding项目托管Home：https://coding.net/u/JEEP-711/project                                                                                  
 
-# Header 1
-## Header 2
-### Header 3
+码云博客Home：http://git.oschina.net/JEEP711/jeep711.github.io                                                                             
 
-- Bulleted
-- List
+Blog GardenHome：http://www.cnblogs.com/JEEP711/                                                                                           
 
-1. Numbered
-2. List
+W3C/BlogHome：https://www.w3cschool.cn/jeep711blog/                                                                                       
 
-**Bold** and _Italic_ and `Code` text
+CSDN/BlogHome：http://blog.csdn.net/jeep911                                                                                                
 
-[Link](url) and ![Image](src)
-```
+51CTO/BlogHome：http://jeep711.blog.51cto.com/                                                                                             
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/proxy-studio/proxy-studio.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Email：jeep711.home.@gmail.com —— JEEP-711@outlook.com —— jeep711@qq.com
