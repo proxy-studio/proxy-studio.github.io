@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="zh-Cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Askbootstrap">
+    <meta name="author" content="Askbootstrap">
+    <title>VIDOE - Video Streaming Website HTML Template</title>
+    <!-- Favicon Icon -->
+    <link rel="icon" type="image/png" href="https://www.xinpianchang.com/favicon/favicon-16x16.png">
+    <!-- Bootstrap core CSS-->
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom fonts for this template-->
+    <link href="./assets/css/all.min.css" rel="stylesheet" type="text/css">
+    <!-- Custom styles for this template-->
+    <link href="./assets/css/osahan.css" rel="stylesheet">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="./assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="./assets/css/owl.theme.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.js"></script>
+    <style type="text/css">
+        :root #wrapper > div[style="padding:3px;"] > #pic,
+        :root #wrapper > .topad,
+        :root .container > a.mid-wrapper,
+        :root .container > .pic_container,
+        :root .container > .ads,
+        :root .tooltip > #tp {
+            display: none !important;
+        }</style>
+</head>
+<body id="page-top" screen_capture_injected="true">
+<div class="mobile-menu">
+    <ul class="bottom-navbar-nav">
+        <li class="bottom-nav-item active">
+            <a class="bottom-nav-link">
+                <i class="fas fa-fw fa-home"></i>
+                <span>首页</span>
+            </a>
+        </li>
+        <li class="bottom-nav-item">
+            <a class="bottom-nav-link">
+                <i class="fas fa-fw fa-users"></i>
+                <span>热门</span>
+            </a>
+        </li>
+        <li class="bottom-nav-item">
+            <a class="bottom-nav-link">
+                <i class="fas fa-fw fa-user-alt"></i>
+                <span>推荐</span>
+            </a>
+        </li>
+        <li class="bottom-nav-item">
+            <a class="bottom-nav-link">
+                <i class="fas fa-fw fa-video"></i>
+                <span>视频</span>
+            </a>
+        </li>
+        <li class="bottom-nav-item">
+            <a class="bottom-nav-link">
+                <i class="fas fa-fw fa-cloud-upload-alt"></i>
+                <span>上传</span>
+            </a>
+        </li>
+    </ul>
+</div>
+<nav class="navbar navbar-expand navbar-light bg-white static-top osahan-nav sticky-top" style="top: 0px;">
+    &nbsp;&nbsp;&nbsp;
+    <button class="btn btn-link btn-sm text-secondary order-1 order-sm-0" id="sidebarToggle">
+        <i class="fas fa-bars"></i>
+    </button> &nbsp;&nbsp;
+    <a class="navbar-brand mr-1"><img
+            class="img-fluid" alt="" src="./assets/images/logo.png"></a>
+    <!-- Navbar Search -->
+    <!--    <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-5 my-2 my-md-0 osahan-navbar-search">-->
+    <!--        <div class="input-group">-->
+    <!--            <input type="text" class="form-control" placeholder="Search for...">-->
+    <!--            <div class="input-group-append">-->
+    <!--                <button class="btn btn-light" type="button">-->
+    <!--                    <i class="fas fa-search"></i>-->
+    <!--                </button>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </form>-->
+    <!-- Navbar -->
+    <!--    <ul class="navbar-nav ml-auto ml-md-0 osahan-right-navbar">-->
+    <!--        <li class="nav-item mx-1">-->
+    <!--            <a class="nav-link">-->
+    <!--                <i class="fas fa-plus-circle fa-fw"></i>-->
+    <!--                上传-->
+    <!--            </a>-->
+    <!--        </li>-->
+    <!--        <li class="nav-item dropdown no-arrow mx-1">-->
+    <!--            <a class="nav-link dropdown-toggle" id="alertsDropdown"-->
+    <!--               role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+    <!--                <i class="fas fa-bell fa-fw"></i>-->
+    <!--                <span class="badge badge-danger">9+</span>-->
+    <!--            </a>-->
+    <!--            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="alertsDropdown">-->
+    <!--                <a class="dropdown-item"><i-->
+    <!--                        class="fas fa-fw fa-edit "></i> &nbsp; Action</a>-->
+    <!--                <a class="dropdown-item"><i-->
+    <!--                        class="fas fa-fw fa-headphones-alt "></i> &nbsp; Another action</a>-->
+    <!--                <div class="dropdown-divider"></div>-->
+    <!--                <a class="dropdown-item"><i-->
+    <!--                        class="fas fa-fw fa-star "></i> &nbsp; Something else here</a>-->
+    <!--            </div>-->
+    <!--        </li>-->
+    <!--        <li class="nav-item dropdown no-arrow mx-1">-->
+    <!--            <a class="nav-link dropdown-toggle" id="messagesDropdown"-->
+    <!--               role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+    <!--                <i class="fas fa-envelope fa-fw"></i>-->
+    <!--                <span class="badge badge-success">7</span>-->
+    <!--            </a>-->
+    <!--            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="messagesDropdown">-->
+    <!--                <a class="dropdown-item"><i-->
+    <!--                        class="fas fa-fw fa-edit "></i> &nbsp; Action</a>-->
+    <!--                <a class="dropdown-item"><i-->
+    <!--                        class="fas fa-fw fa-headphones-alt "></i> &nbsp; Another action</a>-->
+    <!--                <div class="dropdown-divider"></div>-->
+    <!--                <a class="dropdown-item"><i-->
+    <!--                        class="fas fa-fw fa-star "></i> &nbsp; Something else here</a>-->
+    <!--            </div>-->
+    <!--        </li>-->
+    <!--        <li class="nav-item dropdown no-arrow osahan-right-navbar-user">-->
+    <!--            <a class="nav-link dropdown-toggle user-dropdown-link" id="userDropdown"-->
+    <!--               role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+    <!--                <img alt="Avatar" src="./assets/images/user.png">-->
+    <!--                Osahan-->
+    <!--            </a>-->
+    <!--            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">-->
+    <!--                <a class="dropdown-item"><i-->
+    <!--                        class="fas fa-fw fa-user-circle"></i> &nbsp; My Account</a>-->
+    <!--                <a class="dropdown-item"><i-->
+    <!--                        class="fas fa-fw fa-video"></i> &nbsp; Subscriptions</a>-->
+    <!--                <a class="dropdown-item"><i-->
+    <!--                        class="fas fa-fw fa-cog"></i> &nbsp; Settings</a>-->
+    <!--                <div class="dropdown-divider"></div>-->
+    <!--                <a class="dropdown-item" data-toggle="modal" data-target="#logoutModal"><i-->
+    <!--                        class="fas fa-fw fa-sign-out-alt"></i> &nbsp;-->
+    <!--                    Logout</a>-->
+    <!--            </div>-->
+    <!--        </li>-->
+    <!--    </ul>-->
+</nav>
+<div id="wrapper">
+    <!-- Sidebar -->
+    <ul class="sidebar navbar-nav">
+        <li class="nav-item active">
+            <a class="nav-link">
+                <i class="fas fa-fw fa-home"></i>
+                <span>首页</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link">
+                <i class="fas fa-fw fa-users"></i>
+                <span>热门</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link">
+                <i class="fas fa-fw fa-user-alt"></i>
+                <span>推荐</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link">
+                <i class="fas fa-fw fa-video"></i>
+                <span>Video Page</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link">
+                <i class="fas fa-fw fa-cloud-upload-alt"></i>
+                <span>视频</span>
+            </a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" role="button"
+               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-fw fa-folder"></i>
+                <span>Pages</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link">
+                <i class="fas fa-fw fa-history"></i>
+                <span>History Page</span>
+            </a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" role="button"
+               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-fw fa-list-alt"></i>
+                <span>Categories</span>
+            </a>
+        </li>
+        <li class="nav-item channel-sidebar-list">
+            <h6>SUBSCRIPTIONS</h6>
+            <ul>
+                <li>
+                    <a href="#">
+                        <img class="img-fluid" alt="" src="./assets/images/s1.png"> Your Life
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="img-fluid" alt="" src="./assets/images/s2.png"> Unboxing <span
+                            class="badge badge-warning">2</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="img-fluid" alt="" src="./assets/images/s3.png"> Product / Service
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <div id="content-wrapper">
+        <div class="container-fluid pb-0">
+            <div class="video-block section-padding">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="single-video-left">
+                            <div class="single-video">
+                                <div id="media" width="100%" height="315"
+                                     style="box-shadow: 0 4px 8px 0 rgba(8, 8, 8, 0.39)"></div>
+                                <br>
+                            </div>
+                            <div class="single-video-title box mb-3">
+                                <h2><a>Night Shift - mortuary (北京电影学院导演影像展)</a></h2>
+                                <p class="mb-0"><i class="fas fa-eye"></i> 人气 2,729,347</p>
+                            </div>
+                            <div class="single-video-author box mb-3">
+                                <div class="float-right">
+                                    <button class="btn btn-danger" type="button">订阅<strong>1.4M</strong>
+                                    </button>
+                                    <button class="btn btn btn-outline-danger" type="button"><i class="fas fa-bell"></i>
+                                    </button>
+                                </div>
+                                <img class="img-fluid"
+                                     src="https://oss-xpc0.xpccdn.com/Upload/user/2019/07/095d244679b65d2.jpeg"
+                                     alt="JEEP711">
+                                <p>
+                                    <a href="https://www.xinpianchang.com/JEEP711" target="_blank">
+                                        <strong>Conan · Doyle</strong></a> <span title="" data-placement="top"
+                                                                                 data-toggle="tooltip"
+                                                                                 data-original-title="Verified"><i
+                                        class="fas fa-check-circle text-success"></i></span></p>
+                                <small>发布于2020年1月13日</small>
+                            </div>
+                            <div class="single-video-info-content box mb-3">
+                                <h6>创作人:</h6>
+                                <p>Conan · Doyle , Victor Sullivan , Sam Drake , Elena Fisher</p>
+                                <h6>类别 :</h6>
+                                <p> 悬疑 , 剧情短片 , 1080P</p>
+                                <h6>关于 :</h6>
+                                <p>夜间的停车场就像停尸间，那些车无论值多少钱、在外面开起来多风光，晚上停下来都在一个同样的车位上面。 </p>
+                                <h6>标签 :</h6>
+                                <p class="tags mb-0">
+                                    <span><a href="#">第四届NEW VISION 影像展</a></span>
+                                    <span><a href="#">1080P</a></span>
+                                    <span><a href="#">悬疑</a></span>
+                                    <span><a href="#">剧情短片</a></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="single-video-right">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <!--                                    <div class="adblock">-->
+                                    <!--                                        <div class="img">-->
+                                    <!--                                            Google AdSense<br>-->
+                                    <!--                                            336 x 280-->
+                                    <!--                                        </div>-->
+                                    <!--                                    </div>-->
+                                    <div class="main-title">
+                                        <div class="btn-group float-right right-action">
+                                            <a class="right-action-link text-gray" data-toggle="dropdown"
+                                               aria-haspopup="true" aria-expanded="false">
+                                                排序方式 <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item"><i
+                                                        class="fas fa-fw fa-star"></i> &nbsp; 最高评分</a>
+                                                <a class="dropdown-item"><i
+                                                        class="fas fa-fw fa-signal"></i> &nbsp; 已观看</a>
+                                                <a class="dropdown-item"><i
+                                                        class="fas fa-fw fa-times-circle"></i> &nbsp; 关闭</a>
+                                            </div>
+                                        </div>
+                                        <h6>为你推荐</h6>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="video-card video-card-list">
+                                        <div class="video-card-image">
+                                            <a class="play-icon"><i
+                                                    class="fas fa-play-circle"></i></a>
+                                            <a><img
+                                                    class="img-fluid"
+                                                    src="https://cs.xinpianchang.com/uploadfile/article/2019/12/05/5de9159d53fcb.jpeg"
+                                                    alt=""></a>
+                                            <div class="time">00' 55''</div>
+                                        </div>
+                                        <div class="video-card-body">
+                                            <div class="btn-group float-right right-action">
+                                                <a class="right-action-link text-gray" data-toggle="dropdown"
+                                                   aria-haspopup="true" aria-expanded="false">
+                                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                            <div class="video-title">
+                                                <a>美是真我 | 女神节</a>
+                                            </div>
+                                            <div class="video-page text-success">
+                                                Conan · Doyle <a title="" data-placement="top" data-toggle="tooltip"
+                                                                 data-original-title="Verified"
+                                                                 href="https://www.xinpianchang.com/JEEP711"
+                                                                 target="_blank">
+                                                <i class="fas fa-check-circle text-success"></i></a>
+                                            </div>
+                                            <div class="video-view">
+                                                1.8M views &nbsp;<i class="fas fa-calendar-alt"></i> 11 Months ago
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="video-card video-card-list">
+                                        <div class="video-card-image">
+                                            <a class="play-icon"><i
+                                                    class="fas fa-play-circle"></i></a>
+                                            <a><img
+                                                    class="img-fluid"
+                                                    src="https://cs.xinpianchang.com/uploadfile/article/2019/12/05/5de916b336a65.jpeg"
+                                                    alt=""></a>
+                                            <div class="time">02' 04''</div>
+                                        </div>
+                                        <div class="video-card-body">
+                                            <div class="btn-group float-right right-action">
+                                                <a class="right-action-link text-gray" data-toggle="dropdown"
+                                                   aria-haspopup="true" aria-expanded="false">
+                                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                            <div class="video-title">
+                                                <a>Autumn Light</a>
+                                            </div>
+                                            <div class="video-page text-success">
+                                                Conan · Doyle <a title="" data-placement="top" data-toggle="tooltip"
+                                                                 data-original-title="Verified"
+                                                                 href="https://www.xinpianchang.com/JEEP711"
+                                                                 target="_blank"><i
+                                                    class="fas fa-check-circle text-success"></i></a>
+                                            </div>
+                                            <div class="video-view">
+                                                1.8M views &nbsp;<i class="fas fa-calendar-alt"></i> 11 Months ago
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="video-card video-card-list">
+                                        <div class="video-card-image">
+                                            <a class="play-icon" href="https://www.xinpianchang.com/a10614584"
+                                               target="_blank"
+                                            ><i
+                                                    class="fas fa-play-circle"></i></a>
+                                            <a href="https://www.xinpianchang.com/a10614584" target="_blank"><img
+                                                    class="img-fluid"
+                                                    src="https://cs.xinpianchang.com/uploadfile/article/2019/12/08/5debf4d895469.jpeg"
+                                                    alt=""></a>
+                                            <div class="time">00' 23''</div>
+                                        </div>
+                                        <div class="video-card-body">
+                                            <div class="video-title">
+                                                <a href="https://www.xinpianchang.com/a10614584" target="_blank">Blood
+                                                    Sweat & Tears - JEEP-711 & Acappella.Ver</a>
+                                            </div>
+                                            <div class="video-page text-success">
+                                                Conan · Doyle <a title="" data-placement="top" data-toggle="tooltip"
+                                                                 data-original-title="Verified"
+                                                                 href="https://www.xinpianchang.com/JEEP711"
+                                                                 target="_blank"><i
+                                                    class="fas fa-check-circle text-success"></i></a>
+                                            </div>
+                                            <div class="video-view">
+                                                1.8M views &nbsp;<i class="fas fa-calendar-alt"></i> 11 Months ago
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="video-card video-card-list">
+                                        <div class="video-card-image">
+                                            <a class="play-icon" href="https://www.xinpianchang.com/a10530022"
+                                               target="_blank"
+                                            ><i
+                                                    class="fas fa-play-circle"></i></a>
+                                            <a href="https://www.xinpianchang.com/a10530022" target="_blank"><img
+                                                    class="img-fluid"
+                                                    src="https://cs.xinpianchang.com/uploadfile/article/2019/09/07/5d734164067c5.jpeg"
+                                                    alt=""></a>
+                                            <div class="time">01' 07''</div>
+                                        </div>
+                                        <div class="video-card-body">
+                                            <div class="video-title">
+                                                <a href="https://www.xinpianchang.com/a10530022" target="_blank">SAUCE
+                                                    (Cover ZHANG ZE) | JEEP-711 BEATBOX LOOPSTATION REMIX</a>
+                                            </div>
+                                            <div class="video-page text-success">
+                                                Conan · Doyle <a title="" data-placement="top" data-toggle="tooltip"
+                                                                 data-original-title="Verified"
+                                                                 href="https://www.xinpianchang.com/JEEP711"
+                                                                 target="_blank"><i
+                                                    class="fas fa-check-circle text-success"></i></a>
+                                            </div>
+                                            <div class="video-view">
+                                                1.8M views &nbsp;<i class="fas fa-calendar-alt"></i> 11 Months ago
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="video-card video-card-list">
+                                        <div class="video-card-image">
+                                            <a class="play-icon" href="https://www.xinpianchang.com/a10530021"
+                                               target="_blank"
+                                            ><i
+                                                    class="fas fa-play-circle"></i></a>
+                                            <a href="https://www.xinpianchang.com/a10530021" target="_blank"><img
+                                                    class="img-fluid"
+                                                    src="https://cs.xinpianchang.com/uploadfile/article/2019/09/07/5d72889d71f98.jpeg"
+                                                    alt=""></a>
+                                            <div class="time">01' 01''</div>
+                                        </div>
+                                        <div class="video-card-body">
+                                            <div class="btn-group float-right right-action">
+                                                <a
+                                                        class="right-action-link text-gray" data-toggle="dropdown"
+                                                        aria-haspopup="true" aria-expanded="false">
+                                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                            <div class="video-title">
+                                                <a href="https://www.xinpianchang.com/a10530021" target="_blank">JEEP-711
+                                                    | BEATBOX LOOPSTATION REMIX</a>
+                                            </div>
+                                            <div class="video-page text-success">
+                                                Conan · Doyle <a title="" data-placement="top" data-toggle="tooltip"
+                                                                 data-original-title="Verified"
+                                                                 href="https://www.xinpianchang.com/JEEP711"
+                                                                 target="_blank"><i
+                                                    class="fas fa-check-circle text-success"></i></a>
+                                            </div>
+                                            <div class="video-view">
+                                                1.8M views &nbsp;<i class="fas fa-calendar-alt"></i> 11 Months ago
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="video-card video-card-list">
+                                        <div class="video-card-image">
+                                            <a class="play-icon" href="https://www.xinpianchang.com/a10519235"
+                                               target="_blank"
+                                            ><i
+                                                    class="fas fa-play-circle"></i></a>
+                                            <a href="https://www.xinpianchang.com/a10519235" target="_blank"><img
+                                                    class="img-fluid"
+                                                    src="https://cs.xinpianchang.com/uploadfile/article/2019/08/25/5d617b1bcf8b8.jpeg"
+                                                    alt=""></a>
+                                            <div class="time">00' 17''</div>
+                                        </div>
+                                        <div class="video-card-body">
+                                            <div class="video-title">
+                                                <a href="https://www.xinpianchang.com/a10519235" target="_blank">"极客云音乐"计划</a>
+                                            </div>
+                                            <div class="video-page text-success">
+                                                Conan · Doyle <a title="" data-placement="top" data-toggle="tooltip"
+                                                                 data-original-title="Verified"
+                                                                 href="https://www.xinpianchang.com/JEEP711"
+                                                                 target="_blank"><i
+                                                    class="fas fa-check-circle text-success"></i></a>
+                                            </div>
+                                            <div class="video-view">
+                                                1.8M views &nbsp;<i class="fas fa-calendar-alt"></i> 11 Months ago
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="video-card video-card-list">
+                                        <div class="video-card-image">
+                                            <a class="play-icon" href="https://www.xinpianchang.com/a10519257"
+                                               target="_blank"
+                                            ><i
+                                                    class="fas fa-play-circle"></i></a>
+                                            <a href="https://www.xinpianchang.com/a10519257" target="_blank"><img
+                                                    class="img-fluid"
+                                                    src="https://cs.xinpianchang.com/uploadfile/article/2019/08/25/5d618aa3c376d.jpeg"
+                                                    alt=""></a>
+                                            <div class="time">00' 11''</div>
+                                        </div>
+                                        <div class="video-card-body">
+                                            <div class="video-title">
+                                                <a href="https://www.xinpianchang.com/a10519257" target="_blank">Show
+                                                    Time 00:10</a>
+                                            </div>
+                                            <div class="video-page text-success">
+                                                Conan · Doyle <a title="" data-placement="top" data-toggle="tooltip"
+                                                                 data-original-title="Verified"
+                                                                 href="https://www.xinpianchang.com/JEEP711"
+                                                                 target="_blank"><i
+                                                    class="fas fa-check-circle text-success"></i></a>
+                                            </div>
+                                            <div class="video-view">
+                                                1.8M views &nbsp;<i class="fas fa-calendar-alt"></i> 11 Months ago
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="adblock mt-0">
+                                        <div class="img">
+                                            <img src="https://cs.xinpianchang.com/uploadfile/article/2020/01/10/5e187764df9c1.jpeg"
+                                                 width="336px" height="280px">
+                                            <br><br>独自在夜晚的北京上空
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.container-fluid -->
+        <script type="text/javascript">
+            const dp = new DPlayer({
+                container: document.getElementById('media'),
+                screenshot: true,
+                theme: '#ff0000',
+                volume: 0.7,
+                hotkey: true,
+                mutex: true,
+                lang: 'zh-cn',
+                video: false,
+                video: {
+                    url: 'https://qiniu-xpc4.xpccdn.com/5e0ee5faac4fd.mp4',
+                    pic: './assets/images/night_shift_mortuary.png.png',
+                    thumbnails: 'https://cs.xinpianchang.com/uploadfile/article/2020/01/03/5e0ee5f4a2379.jpeg',
+                }
+            });
+        </script>
+        <!-- Sticky Footer -->
+        <footer class="sticky-footer">
+            <div class="container">
+                <div class="row no-gutters">
+                    <div class="col-lg-6 col-sm-6">
+                        <p class="mt-1 mb-0">© Copyright 2020 <strong class="text-dark">WatchHub</strong>. All Rights
+                            Reserved<br>
+                            <small class="mt-0 mb-0">Made with <i class="fas fa-heart text-danger"></i> by <a
+                                    class="text-primary" target="_blank">WatchHub</a>
+                            </small>
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-sm-6 text-right">
+                        <div class="app">
+                            <a><img alt="" src="./assets/images/google.png"></a>
+                            <a><img alt="" src="./assets/images/apple.png"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- /.content-wrapper -->
+</div>
+<!-- /#wrapper -->
+<!-- Scroll to Top Button-->
+<a class="scroll-to-top rounded" href="#page-top"
+   style="display: none;">
+    <i class="fas fa-angle-up"></i>
+</a>
+<!-- Bootstrap core JavaScript-->
+<script src="./assets/js/jquery.min.js"></script>
+<script src="./assets/js/bootstrap.bundle.min.js"></script>
+<!-- Core plugin JavaScript-->
+<script src="./assets/js/jquery.easing.min.js"></script>
+<!-- Owl Carousel -->
+<script src="./assets/js/owl.carousel.js"></script>
+<!-- Custom scripts for all pages-->
+<script src="./assets/js/custom.js"></script>
+</body>
+</html>
